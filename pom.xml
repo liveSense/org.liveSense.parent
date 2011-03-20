@@ -84,6 +84,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.0</version>
 				<executions>
 					<execution>
 						<id>enforce-java</id>
@@ -105,6 +106,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
 				<inherited>true</inherited>
 				<executions>
 					<execution>
@@ -116,7 +118,9 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -125,6 +129,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
 				<executions>
 					<execution>
 						<phase>process-resources</phase>
@@ -148,6 +153,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>ianal-maven-plugin</artifactId>
+				<version>1.0-alpha-1</version>
 				<executions>
 					<execution>
 						<goals>
@@ -163,6 +169,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-remote-resources-plugin</artifactId>
+				<version>1.2</version>
 				<executions>
 					<execution>
 						<goals>
@@ -529,18 +536,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-jcr-commons</artifactId>
 				<version>2.2.4</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.apache.felix.scr.annotations</artifactId>
-				<version>1.4.0</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.apache.felix.scr.annotations</artifactId>
-				<version>1.4.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
