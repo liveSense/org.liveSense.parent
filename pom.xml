@@ -701,22 +701,24 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<repositories>
+	
+	  <repositories>
         <repository>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
           <name>libs-release</name>
-          <url>http://www.livesense.org/artifactory/libs-release</url>
+          <url>http://livesense.org/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
-          <url>http://www.livesense.org/artifactory/libs-snapshot</url>
+          <url>http://livesense.org/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
+      
       <pluginRepositories>
         <pluginRepository>
           <snapshots>
@@ -724,17 +726,31 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>central</id>
           <name>plugins-release</name>
-          <url>http://www.livesense.org/artifactory/plugins-release</url>
+          <url>http://livesense.org/artifactory/plugins-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
           <name>plugins-snapshot</name>
-          <url>http://www.livesense.org/artifactory/plugins-snapshot</url>
+          <url>http://livesense.org/artifactory/plugins-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
-	
-	<distributionManagement>
+    
+       <distributionManagement>
+<!--
+        <repository>
+            <id>distribution-releases</id>
+            <name>releases</name>
+            <url>http://livesense.org/artifactory/libs-release-local</url>
+        </repository>
+        
+        <snapshotRepository>
+            <id>distribution-snapshots</id>
+            <name>snapshots</name>
+            <url>http://livesense.org/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>                                        
+-->
+<!--
 		<repository>
 			<id>libra-maven</id>
 			<name>libra-maven-releases</name>
@@ -745,5 +761,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<name>libra-maven-snapshots</name>
 			<url>http://wiki.local:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
-	</distributionManagement>
+-->
+    </distributionManagement>
 </project>
