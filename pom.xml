@@ -327,7 +327,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
-					<version>2.1.0-1</version>
+					<version>2.2.0</version>
 					<dependencies>
 						<dependency>
 							<groupId>com.google.gwt</groupId>
@@ -737,7 +737,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
       </pluginRepositories>
     
        <distributionManagement>
-<!--
         <repository>
             <id>distribution-releases</id>
             <name>releases</name>
@@ -749,7 +748,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
             <name>snapshots</name>
             <url>http://livesense.org/artifactory/libs-snapshot-local</url>
         </snapshotRepository>                                        
--->
 <!--
 		<repository>
 			<id>libra-maven</id>
