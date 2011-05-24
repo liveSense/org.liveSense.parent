@@ -738,13 +738,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
     
        <distributionManagement>
         <repository>
-            <id>distribution-releases</id>
+            <id>livesense-distribution-releases</id>
             <name>releases</name>
             <url>http://livesense.org/artifactory/libs-release-local</url>
         </repository>
         
         <snapshotRepository>
-            <id>distribution-snapshots</id>
+            <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
             <url>http://livesense.org/artifactory/libs-snapshot-local</url>
         </snapshotRepository>                                        
