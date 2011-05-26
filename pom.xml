@@ -720,13 +720,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>libs-release</name>
+          <name>livesense-release</name>
           <url>http://livesense.org/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>libs-snapshot</name>
+          <name>livesense-snapshot</name>
           <url>http://livesense.org/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
@@ -737,13 +737,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>plugins-release</name>
+          <name>livesense-plugins-release</name>
           <url>http://livesense.org/artifactory/plugins-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>plugins-snapshot</name>
+          <name>livesense-plugins-snapshot</name>
           <url>http://livesense.org/artifactory/plugins-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
@@ -760,17 +760,5 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
             <name>snapshots</name>
             <url>http://livesense.org/artifactory/libs-snapshot-local</url>
         </snapshotRepository>                                        
-<!--
-		<repository>
-			<id>libra-maven</id>
-			<name>libra-maven-releases</name>
-			<url>http://wiki.local:8081/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>libra-maven</id>
-			<name>libra-maven-snapshots</name>
-			<url>http://wiki.local:8081/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
--->
     </distributionManagement>
 </project>
