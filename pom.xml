@@ -231,35 +231,38 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 					<artifactId>maven-jcrocm-plugin</artifactId>
 					<version>2.0.4-incubator</version>
 				</plugin>
-				<plugin>
-					<groupId>org.apache.felix</groupId>
-					<artifactId>maven-scr-plugin</artifactId>
-					<version>1.6.0</version>
-					<!-- As QDox is trying to inspect/load the classes we have to add a slf4j implementation to the 
-						class path of the plugin - we usually use a static field for the logger and during class loading this 
-						field requires an slf4j implementation! -->
-					<dependencies>
-						<dependency>
-							<groupId>org.slf4j</groupId>
-							<artifactId>slf4j-simple</artifactId>
-							<version>1.6.1</version>
-						</dependency>
-					</dependencies>
-					<executions>
-						<execution>
-							<id>generate-scr-scrdescriptor</id>
-							<goals>
-								<goal>scr</goal>
-							</goals>
-							<configuration>
-								<properties>
-									<service.vendor>liveSense.org</service.vendor>
-								</properties>
-							</configuration>
-						</execution>
-					</executions>
-				</plugin>
-				<!-- Compile for Java 5 and higher -->
+                <plugin>                                                                                                                                                            
+                    <groupId>org.apache.felix</groupId>                                                                                                                             
+                    <artifactId>maven-scr-plugin</artifactId>                                                                                                                       
+                    <version>1.7.2</version>                                                                                                                                        
+                    <!-- As QDox is trying to inspect/load the classes                                                                                                              
+                         we have to add a slf4j implementation to the                                                                                                               
+                         class path of the plugin - we usually use                                                                                                                  
+                         a static field for the logger and during class                                                                                                             
+                         loading this field requires an slf4j implementation!                                                                                                       
+                     -->                                                                                                                                                            
+                    <dependencies>                                                                                                                                                  
+                        <dependency>                                                                                                                                                
+                            <groupId>org.slf4j</groupId>                                                                                                                            
+                            <artifactId>slf4j-simple</artifactId>                                                                                                                   
+                            <version>1.5.2</version>                                                                                                                                
+                        </dependency>                                                                                                                                               
+                    </dependencies>                                                                                                                                                 
+                    <executions>                                                                                                                                                    
+                        <execution>                                                                                                                                                 
+                            <id>generate-scr-scrdescriptor</id>                                                                                                                     
+                            <goals>                                                                                                                                                 
+                                <goal>scr</goal>                                                                                                                                    
+                            </goals>                                                                                                                                                
+                            <configuration>                                                                                                                                         
+                                <properties>                                                                                                                                        
+                                    <service.vendor>liveSense.org</service.vendor>                                                                                 
+                                </properties>                                                                                                                                       
+                            </configuration>                                                                                                                                        
+                        </execution>                                                                                                                                                
+                    </executions>                                                                                                                                                   
+                </plugin>
+                <!-- Compile for Java 5 and higher -->
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
@@ -538,7 +541,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>commons-pool</groupId>
 				<artifactId>commons-pool</artifactId>
-				<version>1.5.5</version>
+				<version>1.5.6</version>
 			</dependency>
 	
 			<dependency>
@@ -570,6 +573,11 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>2.1.0</version>
 				<scope>provided</scope>
 			</dependency>
+            <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.jcr.jackrabbit.server</artifactId>
+                <version>2.1.0</version>
+            </dependency>
 			<dependency>
 				<groupId>org.apache.jackrabbit</groupId>
 				<artifactId>jackrabbit-jcr-commons</artifactId>
@@ -590,7 +598,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>org.apache.felix.eventadmin</artifactId>
-				<version>1.2.8</version>
+				<version>1.2.12</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
@@ -641,7 +649,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
-				<version>2.1.0</version>
+				<version>2.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
@@ -671,22 +679,22 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.jcr.resource</artifactId>
-				<version>2.0.8</version>
+				<version>2.0.10</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.event</artifactId>
-				<version>3.0.2</version>
+				<version>3.1.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.auth.core</artifactId>
-				<version>1.0.4</version>
+				<version>1.0.6</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.engine</artifactId>
-				<version>2.1.0</version>
+				<version>2.2.4</version>
 			</dependency>
 			<!-- OSGi Core and Compendium API -->
 			<dependency>
@@ -705,7 +713,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>servlet-api</artifactId>
-				<version>2.4</version>
+				<version>2.5</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- JCR API -->
@@ -719,14 +727,14 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.5.2</version>
+				<version>1.6.1</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- Declarative Services support annotations -->
 			<dependency>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>org.apache.felix.scr.annotations</artifactId>
-				<version>1.4.0</version>
+				<version>1.6.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- Basic dependencies for Unit Tests -->
@@ -745,7 +753,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
-				<version>1.5.2</version>
+				<version>1.6.1</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
