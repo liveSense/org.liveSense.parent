@@ -766,13 +766,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>central</id>
           <name>livesense-release</name>
-          <url>http://livesense.org/artifactory/libs-release</url>
+          <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
           <name>livesense-snapshot</name>
-          <url>http://livesense.org/artifactory/libs-snapshot</url>
+          <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
         </repository>
       </repositories>
       
@@ -783,13 +783,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>central</id>
           <name>livesense-plugins-release</name>
-          <url>http://livesense.org/artifactory/plugins-release</url>
+          <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>http://livesense.org/artifactory/plugins-snapshot</url>
+          <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
         </pluginRepository>
       </pluginRepositories>
     
@@ -797,13 +797,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
         <repository>
             <id>livesense-distribution-releases</id>
             <name>releases</name>
-            <url>http://livesense.org/artifactory/libs-release-local</url>
+            <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
         </repository>
         
         <snapshotRepository>
             <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
-            <url>http://livesense.org/artifactory/libs-snapshot-local</url>
+            <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>                                        
     </distributionManagement>
 </project>
