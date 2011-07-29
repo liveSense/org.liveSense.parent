@@ -759,18 +759,18 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 		</dependencies>
 	</dependencyManagement>
 	
-	  <repositories>
+    <repositories>
         <repository>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-          <id>central</id>
+          <id>livesense-central</id>
           <name>livesense-release</name>
           <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
         </repository>
         <repository>
           <snapshots />
-          <id>snapshots</id>
+          <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
           <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
         </repository>
@@ -781,13 +781,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-          <id>central</id>
+          <id>livesense-central</id>
           <name>livesense-plugins-release</name>
           <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
-          <id>snapshots</id>
+          <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
           <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
         </pluginRepository>
