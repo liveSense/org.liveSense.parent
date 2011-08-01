@@ -727,7 +727,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.6.1</version>
+				<version>1.5.2</version>
 				<scope>provided</scope>
 			</dependency>
 			<!-- Declarative Services support annotations -->
