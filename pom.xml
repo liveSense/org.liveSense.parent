@@ -957,7 +957,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>http://www.livesense.org/nexus/content/repositories/livesense-local-snapshots/</url>
+          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
         </repository>
         <repository>
           <id>jboss-public</id>
