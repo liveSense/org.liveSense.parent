@@ -26,7 +26,8 @@
 	</prerequisites>
 	<properties>
 		<gwt.version>2.4.0</gwt.version>
-        <jackrabbit.version>2.1.1</jackrabbit.version>
+        <jackrabbit.version>2.2.5</jackrabbit.version>
+        <slf4j.version>1.5.2</slf4j.version>
 	</properties>
 	<!-- <issueManagement> <system>Mantis</system> <url></url> </issueManagement> -->
 	<scm>
@@ -39,7 +40,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.5</version>
+				<version>2.8</version>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -55,12 +56,12 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>2.4.3</version>
+				<version>2.10</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-changes-plugin</artifactId>
-				<version>2.3</version>
+				<version>2.6</version>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -75,7 +76,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.4</version>
+				<version>1.5</version>
 			</plugin>
 		</plugins>
 	</reporting>
@@ -85,7 +86,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>1.0</version>
+				<version>1.0.1</version>
 				<executions>
 					<execution>
 						<id>enforce-java</id>
@@ -95,8 +96,8 @@
 						<configuration>
 							<rules>
 								<requireJavaVersion>
-									<message> Apache Sling must be compiled with Java 5 or higher </message>
-									<version>1.5.0</version>
+									<message> liveSense must be compiled with Java 6 or higher </message>
+									<version>1.6.0</version>
 								</requireJavaVersion>
 							</rules>
 						</configuration>
@@ -255,7 +256,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			    </plugin>
 				<plugin>
                 	<artifactId>maven-jar-plugin</artifactId>
-                	<version>2.3.1</version>
+                	<version>2.3.2</version>
 				</plugin>
 				<plugin>
                 	<groupId>org.apache.maven.plugins</groupId>
@@ -280,12 +281,12 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.apache.sling</groupId>
 					<artifactId>maven-sling-plugin</artifactId>
-					<version>2.0.4-incubator</version>
+					<version>2.0.6</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.sling</groupId>
 					<artifactId>maven-launchpad-plugin</artifactId>
-					<version>2.0.6</version>
+					<version>2.1.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.sling</groupId>
@@ -311,7 +312,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
                         <dependency>                                                                                                                                                
                             <groupId>org.slf4j</groupId>                                                                                                                            
                             <artifactId>slf4j-simple</artifactId>                                                                                                                   
-                            <version>1.5.2</version>                                                                                                                                
+                            <version>${slf4j.version}</version>                                                                                                                                
                         </dependency>                                                                                                                                               
                     </dependencies>                                                                                                                                                 
                     <executions>                                                                                                                                                    
@@ -332,7 +333,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
-					<version>2.0.1</version>
+					<version>2.3.5</version>
 					<inherited>true</inherited>
 					<configuration>
 						<outputDirectory>${basedir}/target/classes</outputDirectory>
@@ -354,22 +355,22 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.1</version>
+					<version>2.3</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
-					<version>2.1-beta-1</version>
+					<version>2.1.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.mortbay.jetty</groupId>
 					<artifactId>maven-jetty-plugin</artifactId>
-					<version>6.1.20</version>
+					<version>6.1.26</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.cargo</groupId>
 					<artifactId>cargo-maven2-plugin</artifactId>
-					<version>1.0</version>
+					<version>1.1.3</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -379,7 +380,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.apache.rat</groupId>
 					<artifactId>apache-rat-plugin</artifactId>
-					<version>0.6</version>
+					<version>0.7</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.groovy.maven</groupId>
@@ -389,11 +390,11 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>animal-sniffer-maven-plugin</artifactId>
-					<version>1.5</version>
+					<version>1.7</version>
 					<configuration>
 						<signature>
 							<groupId>org.codehaus.mojo.signature</groupId>
-							<artifactId>java15</artifactId>
+							<artifactId>java16</artifactId>
 							<version>1.0</version>
 						</signature>
 					</configuration>
@@ -401,17 +402,17 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.5</version>
+					<version>1.7</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>emma-maven-plugin</artifactId>
-					<version>1.0-alpha-2</version>
+					<version>1.0-alpha-3</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>gwt-maven-plugin</artifactId>
-					<version>2.4.0</version>
+					<version>${gwt.version}</version>
 					<dependencies>
 						<dependency>
 							<groupId>com.google.gwt</groupId>
@@ -599,27 +600,12 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 	</developers>
 	<dependencyManagement>
 		<dependencies>
+
+			<!-- Sling dependencies -->
 			<dependency>
-				<groupId>commons-dbcp</groupId>
-				<artifactId>commons-dbcp</artifactId>
-				<version>1.4</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-pool</groupId>
-				<artifactId>commons-pool</artifactId>
-				<version>1.5.6</version>
-			</dependency>
-	
-			<dependency>
-				<groupId>commons-dbutils</groupId>
-				<artifactId>commons-dbutils</artifactId>
-				<version>1.3</version>
-			</dependency>
-	
-			<dependency>
-	    		<groupId>commons-beanutils</groupId>
-	    		<artifactId>commons-beanutils</artifactId>
-	    		<version>1.8.3</version>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.auth.core</artifactId>
+				<version>1.0.6</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
@@ -635,25 +621,8 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.jcr.api</artifactId>
-				<version>2.1.0</version>
-				<scope>provided</scope>
-			</dependency>
-            <dependency>
-                <groupId>org.apache.sling</groupId>
-                <artifactId>org.apache.sling.jcr.jackrabbit.server</artifactId>
-                <version>2.1.0</version>
-            </dependency>
-			<dependency>
-				<groupId>org.apache.jackrabbit</groupId>
-				<artifactId>jackrabbit-jcr-commons</artifactId>
-				<version>${jackrabbit.version}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.jackrabbit</groupId>
-				<artifactId>jackrabbit-core</artifactId>
-				<version>${jackrabbit.version}</version>
+				<artifactId>org.apache.sling.commons.mime</artifactId>
+				<version>2.1.4</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
@@ -662,38 +631,74 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>2.1.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.apache.felix.eventadmin</artifactId>
-				<version>1.2.12</version>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.scheduler</artifactId>
+				<version>2.3.0</version>
+				<scope>provided</scope>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
-				<artifactId>org.liveSense.servlet.gwtrpc</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.event</artifactId>
+				<version>3.1.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
-				<artifactId>org.liveSense.core</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.api</artifactId>
+				<version>2.1.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
-				<artifactId>org.liveSense.misc.jcrom</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.base</artifactId>
+				<version>2.1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.engine</artifactId>
+				<version>2.2.4</version>
+			</dependency>
+            <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.jcr.jackrabbit.server</artifactId>
+                <version>2.1.0</version>
+            </dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.jcr.resource</artifactId>
+				<version>2.0.10</version>
+			</dependency>
+   			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+				<version>2.1.2</version>
 			</dependency>
 
+			<!-- Jackrabbit dependencies -->            
 			<dependency>
-				<groupId>commons-beanutils</groupId>
-				<artifactId>commons-beanutils-core</artifactId>
-				<version>1.8.3</version>
-				<type>jar</type>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-api</artifactId>
+				<version>${jackrabbit.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.sf.opencsv</groupId>
-				<artifactId>opencsv</artifactId>
-				<version>2.1</version>
-				<type>jar</type>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-core</artifactId>
+				<version>${jackrabbit.version}</version>
+				<scope>provided</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.jackrabbit</groupId>
+				<artifactId>jackrabbit-jcr-commons</artifactId>
+				<version>${jackrabbit.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			
+			<!-- Felix dependencies -->
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.apache.felix.eventadmin</artifactId>
+				<version>1.2.14</version>
+			</dependency>
+
+			<!--  GWT dependencies -->
 			<dependency>
 				<groupId>com.google.gwt</groupId>
 				<artifactId>gwt-user</artifactId>
@@ -707,20 +712,97 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>${gwt.version}</version>
 				<type>jar</type>
 			</dependency>
+						
+			<!--  Define liveSense dependencies -->
 			<dependency>
 				<groupId>org.liveSense</groupId>
-				<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
+				<artifactId>org.liveSense.core</artifactId>
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
-				<version>2.1.2</version>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.framework.cxf</artifactId>
+				<version>1.0.0-2.4.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.commons.scheduler</artifactId>
-				<version>2.3.0</version>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.framework.gwt</artifactId>
+				<version>1.0.1-2.4.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.framework.gxt</artifactId>
+				<version>1.0.1-2.2.5-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.gwt.jsr303</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.i18n</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.javax.persistence</artifactId>
+				<version>1.0.1-1.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.jcrom</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.jsr303</artifactId>
+				<version>1.0.0-1.0.0.GA-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.misc.queryBuilder</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
+				<version>1.0.1-1.1.2-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.activation</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.captha</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.email</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.languageSelector</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.report.jasper</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
@@ -728,40 +810,67 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.jcr.base</artifactId>
-				<version>2.1.0</version>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.commons.mime</artifactId>
-				<version>2.1.4</version>
+				<groupId>org.liveSense</groupId>
+				<artifactId>org.liveSense.service.xssRemove</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+
+
+			<!-- Commons dependencies -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>1.4</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.jackrabbit</groupId>
-				<artifactId>jackrabbit-api</artifactId>
-				<version>${jackrabbit.version}</version>
+            	<groupId>org.apache.commons</groupId>
+            	<artifactId>commons-math</artifactId>
+            	<version>2.2</version>
+        	</dependency>
+			<dependency>
+				<groupId>commons-dbcp</groupId>
+				<artifactId>commons-dbcp</artifactId>
+				<version>1.4</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.jcr.resource</artifactId>
-				<version>2.0.10</version>
+				<groupId>commons-pool</groupId>
+				<artifactId>commons-pool</artifactId>
+				<version>1.5.6</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.event</artifactId>
-				<version>3.1.0</version>
+				<groupId>commons-dbutils</groupId>
+				<artifactId>commons-dbutils</artifactId>
+				<version>1.3</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.auth.core</artifactId>
-				<version>1.0.6</version>
+	    		<groupId>commons-beanutils</groupId>
+	    		<artifactId>commons-beanutils</artifactId>
+	    		<version>1.8.3</version>
 			</dependency>
+	        <dependency>
+	            <groupId>commons-codec</groupId>
+	            <artifactId>commons-codec</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>commons-lang</groupId>
+	            <artifactId>commons-lang</artifactId>
+	            <version>2.4</version>
+	        </dependency>
+			
+			<!-- OpenCSV -->
 			<dependency>
-				<groupId>org.apache.sling</groupId>
-				<artifactId>org.apache.sling.engine</artifactId>
-				<version>2.2.4</version>
+				<groupId>net.sf.opencsv</groupId>
+				<artifactId>opencsv</artifactId>
+				<version>2.3</version>
+				<type>jar</type>
 			</dependency>
+
 			<!-- OSGi Core and Compendium API -->
 			<dependency>
 				<groupId>org.osgi</groupId>
@@ -775,6 +884,14 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>4.1.0</version>
 				<scope>provided</scope>
 			</dependency>
+
+			<!-- Freemarker -->
+			<dependency>
+				<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+				<version>2.3.18</version>
+			</dependency>
+			
 			<!-- Web Application API -->
 			<dependency>
 				<groupId>javax.servlet</groupId>
@@ -789,13 +906,15 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>2.0</version>
 				<scope>provided</scope>
 			</dependency>
+			
 			<!-- Basic Logging -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>1.5.2</version>
+				<version>${slf4j.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			
 			<!-- Declarative Services support annotations -->
 			<dependency>
 				<groupId>org.apache.felix</groupId>
@@ -819,7 +938,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
-				<version>1.5.2</version>
+				<version>${slf4j.version}</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
