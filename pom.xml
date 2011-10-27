@@ -943,8 +943,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	<!--  
+	 
     <repositories>
         <repository>
           <snapshots>
@@ -952,13 +951,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-release</name>
-          <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
+          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
         </repository>
         <repository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
+          <url>http://www.livesense.org/nexus/content/repositories/livesense-local-snapshots/</url>
         </repository>
         <repository>
           <id>jboss-public</id>
@@ -974,28 +973,28 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-plugins-release</name>
-          <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
+          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
+          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
         </pluginRepository>
       </pluginRepositories>
-    
+      
        <distributionManagement>
         <repository>
             <id>livesense-distribution-releases</id>
             <name>releases</name>
-            <url>http://www.livesense.org/nexus/content/repositories/releases/</url>
+            <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
         </repository>
         
         <snapshotRepository>
             <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
-            <url>http://www.livesense.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>                                        
+            <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
--->
+
 </project>
