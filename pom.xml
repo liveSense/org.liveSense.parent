@@ -944,11 +944,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 	</dependencyManagement>
     <dependencies>
 		<dependency>
-			<groupId>org.apache.sling</groupId>
-			<artifactId>org.apache.sling.commons.log</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -957,24 +952,41 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
     		<groupId>org.slf4j</groupId>
     		<artifactId>slf4j-api</artifactId>
 		</dependency>
+		<!--  -->
     	<dependency>
     		<groupId>org.slf4j</groupId>
     		<artifactId>slf4j-simple</artifactId>
+    		<scope>runtime</scope>
 		</dependency>
-		<!-- 
+    	<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>slf4j-simple</artifactId>
+    		<scope>test</scope>
+		</dependency> 
     	<dependency>
     		<groupId>org.slf4j</groupId>
     		<artifactId>log4j-over-slf4j</artifactId>
     		<version>${slf4j.version}</version>
+    		<scope>runtime</scope>
 		</dependency>
-		 -->
-		<!-- 
-		<dependency>
-    		<groupId>log4j</groupId>
-    		<artifactId>log4j</artifactId>
-    		<version>1.2.16</version>
+    	<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>log4j-over-slf4j</artifactId>
+    		<version>${slf4j.version}</version>
+    		<scope>test</scope>
 		</dependency>
-		 -->
+    	<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>jcl-over-slf4j</artifactId>
+    		<version>${slf4j.version}</version>
+    		<scope>runtime</scope>
+		</dependency>
+    	<dependency>
+    		<groupId>org.slf4j</groupId>
+    		<artifactId>jcl-over-slf4j</artifactId>
+    		<version>${slf4j.version}</version>
+    		<scope>test</scope>
+		</dependency>
     </dependencies>
 	 
     <repositories>
