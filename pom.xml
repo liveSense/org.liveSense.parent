@@ -26,8 +26,8 @@
 	</prerequisites>
 	<properties>
 		<gwt.version>2.4.0</gwt.version>
-        <jackrabbit.version>2.2.5</jackrabbit.version>
-        <slf4j.version>1.5.2</slf4j.version>
+        <jackrabbit.version>2.3.6</jackrabbit.version>
+        <slf4j.version>1.6.1</slf4j.version>
 	</properties>
 	<!-- <issueManagement> <system>Mantis</system> <url></url> </issueManagement> -->
 	<scm>
@@ -249,7 +249,20 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			                <ignore />
 			              </action>
 			            </pluginExecution>
-			            
+
+			            <pluginExecution>
+			            	<pluginExecutionFilter>
+			            		<groupId>org.bsc.maven</groupId>
+			            		<artifactId>maven-processor-plugin</artifactId>
+			            		<versionRange>[2.0.5,)</versionRange>
+			            		<goals>
+			            			<goal>process</goal>
+			            		</goals>
+			            	</pluginExecutionFilter>
+			            	<action>
+			            		<ignore></ignore>
+			            	</action>
+			            </pluginExecution>
 			          </pluginExecutions>
 			        </lifecycleMappingMetadata>
 			      </configuration>
@@ -614,6 +627,11 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>2.2.2</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.commons.classloader</artifactId>
+				<version>1.2.2</version>
+			</dependency>			
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.log</artifactId>
