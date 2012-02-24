@@ -155,7 +155,6 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>ianal-maven-plugin</artifactId>
-				<version>1.0-alpha-1</version>
 				<executions>
 					<execution>
 						<goals>
@@ -189,84 +188,113 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 		<pluginManagement>
 			<plugins>
 				<plugin>
-			      <groupId>org.eclipse.m2e</groupId>
-			      <artifactId>lifecycle-mapping</artifactId>
-			      <version>1.0.0</version>
-			      <configuration>
-			        <lifecycleMappingMetadata>
-			          <pluginExecutions>
-			            <pluginExecution>
-			              <pluginExecutionFilter>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-antrun-plugin</artifactId>
-							<versionRange>[1.6,)</versionRange>
-							<goals>
-								<goal>run</goal>
-							</goals>
-			              </pluginExecutionFilter>
-			              <action>
-			                <ignore />
-			              </action>
-			            </pluginExecution>
-			            <pluginExecution>
-			              <pluginExecutionFilter>
-							<groupId>org.apache.felix</groupId>
-							<artifactId>maven-scr-plugin</artifactId>
-							<versionRange>[1.7,)</versionRange>
-							<goals>
-								<goal>scr</goal>
-							</goals>
-			              </pluginExecutionFilter>
-			              <action>
-			                <ignore />
-			              </action>
-			            </pluginExecution>
-			            
-			            <pluginExecution>
-			              <pluginExecutionFilter>
-							<groupId>org.apache.sling</groupId>
-							<artifactId>maven-launchpad-plugin</artifactId>
-							<versionRange>[2.0,)</versionRange>
-							<goals>
-								<goal>prepare-package</goal>
-							</goals>
-			              </pluginExecutionFilter>
-			              <action>
-			                <ignore />
-			              </action>
-			            </pluginExecution>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+								<pluginExecutions>
+									<pluginExecution>
+										<pluginExecutionFilter>
+											<groupId>org.apache.maven.plugins</groupId>
+											<artifactId>maven-remote-resources-plugin</artifactId>
+											<versionRange>[1.2,)</versionRange>
+											<goals>
+												<goal>process</goal>
+											</goals>
+										</pluginExecutionFilter>
+										 <action>
+	                    						<ignore></ignore>
+	                  					</action>
+	               				</pluginExecution>
 
-			            <pluginExecution>
-			              <pluginExecutionFilter>
-					        <groupId>org.codehaus.mojo</groupId>
-		    			    <artifactId>jasperreports-maven-plugin</artifactId>
-							<versionRange>[1.0-beta-2,)</versionRange>
-							<goals>
-								<goal>compile-reports</goal>
-							</goals>
-			              </pluginExecutionFilter>
-			              <action>
-			                <ignore />
-			              </action>
-			            </pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-enforcer-plugin</artifactId>
+										<versionRange>[1.0,)</versionRange>
+										<goals>
+											<goal>enforce</goal>
+										</goals>
+									</pluginExecutionFilter>
+									 <action>
+                    						<ignore></ignore>
+                  					</action>
+               				</pluginExecution>
+               				<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-antrun-plugin</artifactId>
+										<versionRange>[1.6,)</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.felix</groupId>
+										<artifactId>maven-scr-plugin</artifactId>
+										<versionRange>[1.7,)</versionRange>
+										<goals>
+											<goal>scr</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+			
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.sling</groupId>
+										<artifactId>maven-launchpad-plugin</artifactId>
+										<versionRange>[2.0,)</versionRange>
+										<goals>
+											<goal>prepare-package</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+			
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.codehaus.mojo</groupId>
+										<artifactId>jasperreports-maven-plugin</artifactId>
+										<versionRange>[1.0-beta-2,)</versionRange>
+										<goals>
+											<goal>compile-reports</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+			
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.bsc.maven</groupId>
+										<artifactId>maven-processor-plugin</artifactId>
+										<versionRange>[2.0.5,)</versionRange>
+										<goals>
+											<goal>process</goal>
+											<goal>process-test</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
 
-			            <pluginExecution>
-			            	<pluginExecutionFilter>
-			            		<groupId>org.bsc.maven</groupId>
-			            		<artifactId>maven-processor-plugin</artifactId>
-			            		<versionRange>[2.0.5,)</versionRange>
-			            		<goals>
-			            			<goal>process</goal>
-			            		</goals>
-			            	</pluginExecutionFilter>
-			            	<action>
-			            		<ignore></ignore>
-			            	</action>
-			            </pluginExecution>
-			          </pluginExecutions>
-			        </lifecycleMappingMetadata>
-			      </configuration>
-			    </plugin>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
 				<plugin>
                 	<artifactId>maven-jar-plugin</artifactId>
                 	<version>2.3.2</version>
