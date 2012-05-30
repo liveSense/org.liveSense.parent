@@ -122,6 +122,7 @@
 		<liveSense.fragment.com.sun.image.codec.jpeg.version>1.0.1-SNAPSHOT</liveSense.fragment.com.sun.image.codec.jpeg.version>
 		<liveSense.misc.configurationLoader.version>1.0.1-SNAPSHOT</liveSense.misc.configurationLoader.version>
 		<liveSense.service.solr.version>${solr.version}_1-SNAPSHOT</liveSense.service.solr.version>
+		<liveSense.service.solr.configurationLoader.version>1.0.0-SNAPSHOT</liveSense.service.solr.configurationLoader.version>
 	</properties>
 	<!-- <issueManagement> <system>Mantis</system> <url></url> </issueManagement> -->
 	<scm>
@@ -782,7 +783,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.event</artifactId>
-				<version>${sling.event.verison}</version>
+				<version>${sling.event.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
@@ -1003,7 +1004,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 	        <dependency>
 	            <groupId>commons-codec</groupId>
 	            <artifactId>commons-codec</artifactId>
-	            <version>1.4</version>
+	            <version>1.6</version>
 	        </dependency>
 	        <dependency>
 	            <groupId>commons-lang</groupId>
