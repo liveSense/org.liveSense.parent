@@ -26,8 +26,102 @@
 	</prerequisites>
 	<properties>
 		<gwt.version>2.4.0</gwt.version>
+		<gxt.version>3.0.0-rc2</gxt.version>
         <jackrabbit.version>2.3.6</jackrabbit.version>
+        <cxf.version>2.5.2</cxf.version>
         <slf4j.version>1.6.1</slf4j.version>
+        <logback.version>1.0.3</logback.version>
+		<lilith.version>0.9.41</lilith.version>
+		<sulky.version>0.9.14</sulky.version>
+		<solr.version>4.0.1162474</solr.version>
+		<spring.version>3.0.5.RELEASE</spring.version>
+		<activiti.version>5.8</activiti.version>
+		<karaf.version>2.2.7</karaf.version>
+		<jasper.version>4.5.0</jasper.version>
+		<sling.adapter.version>2.0.8</sling.adapter.version>
+		<sling.api.version>2.2.2</sling.api.version>
+		<sling.auth.core.version>1.0.6</sling.auth.core.version>
+		<sling.auth.form.version>1.0.2</sling.auth.form.version>
+		<sling.auth.openid.version>1.0.2</sling.auth.openid.version>
+		<sling.auth.selector.version>1.0.4</sling.auth.selector.version>
+		<sling.bundleresource.impl.version>2.0.6</sling.bundleresource.impl.version>
+		<sling.commons.classloader.version>1.2.2</sling.commons.classloader.version>
+		<sling.commons.json.version>2.0.6</sling.commons.json.version>
+		<sling.commons.log.version>2.1.3-SNAPSHOT</sling.commons.log.version>
+		<sling.commons.logservice.version>0.0.1-SNAPSHOT</sling.commons.logservice.version>
+		<sling.commons.mime.version>2.1.4</sling.commons.mime.version>
+		<sling.commons.osgi.version>2.1.0</sling.commons.osgi.version>
+		<sling.commons.scheduler.version>2.3.0</sling.commons.scheduler.version>
+		<sling.commons.threads.version>3.1.0</sling.commons.threads.version>
+		<sling.engine.version>2.2.4</sling.engine.version>
+		<sling.event.version>3.1.0</sling.event.version>
+		<sling.fsresource.version>1.0.2</sling.fsresource.version>
+		<sling.i18n.version>2.1.2</sling.i18n.version>
+		<sling.installer.core.version>3.2.2</sling.installer.core.version>
+		<sling.installer.provider.file.version>1.0.2</sling.installer.provider.file.version>
+		<sling.installer.provider.jcr.version>3.1.0</sling.installer.provider.jcr.version>
+		<sling.jcr.api.version>2.1.0</sling.jcr.api.version>
+		<sling.jcr.base.version>2.1.0</sling.jcr.base.version>
+		<sling.jcr.classloader.version>3.1.4</sling.jcr.classloader.version>
+		<sling.jcr.contentloader.version>2.1.3-SNAPSHOT</sling.jcr.contentloader.version>
+		<sling.jcr.davex.version>1.0.0</sling.jcr.davex.version>
+		<sling.jcr.jackrabbit.accessmanager.version>2.1.1-SNAPSHOT</sling.jcr.jackrabbit.accessmanager.version>
+		<sling.jcr.jackrabbit.server.version>2.1.1-SNAPSHOT</sling.jcr.jackrabbit.server.version>
+		<sling.jcr.jackrabbit.usermanager.version>2.2.0</sling.jcr.jackrabbit.usermanager.version>
+		<sling.jcr.ocm.version>2.0.4-incubator</sling.jcr.ocm.version>
+		<sling.jcr.resource.version>2.0.10</sling.jcr.resource.version>
+		<sling.jcr.webdav.version>2.1.0</sling.jcr.webdav.version>
+		<sling.launchpad.content.version>2.0.6</sling.launchpad.content.version>
+		<sling.launchpad.installer.version>1.0.4</sling.launchpad.installer.version>
+		<sling.scripting.api.version>2.1.2</sling.scripting.api.version>
+		<sling.scripting.core.version>2.0.18</sling.scripting.core.version>
+		<sling.scripting.freemarker.version>2.0.0-SNAPSHOT</sling.scripting.freemarker.version>
+		<sling.scripting.javascript.version>2.0.12</sling.scripting.javascript.version>
+		<sling.scripting.jsp.taglib.version>2.1.2</sling.scripting.jsp.taglib.version>
+		<sling.scripting.jsp.version>2.0.18</sling.scripting.jsp.version>
+		<sling.servlets.get.version>2.1.2</sling.servlets.get.version>
+		<sling.servlets.post.version>2.1.1-SNAPSHOT</sling.servlets.post.version>
+		<sling.servlets.resolver.version>2.1.0</sling.servlets.resolver.version>
+		<sling.settings.version>1.0.2</sling.settings.version>
+		<sling.fragment.transaction.version>0.0.1-SNAPSHOT</sling.fragment.transaction.version>
+		<sling.extensions.threaddump.version>0.2.0</sling.extensions.threaddump.version>
+		<sling.jcr.webconsole.version>1.0.0</sling.jcr.webconsole.version>
+		<sling.extensions.explorer.version>1.0.3-SNAPSHOT</sling.extensions.explorer.version>
+		<sling.extensions.webconsolesecurityprovider.version>1.0.0</sling.extensions.webconsolesecurityprovider.version>
+		<liveSense.misc.log.lilith.core.version>${lilith.version}_1-SNAPSHOT</liveSense.misc.log.lilith.core.version>
+		<liveSense.misc.log.config.default.version>1.0.0-SNAPSHOT</liveSense.misc.log.config.default.version>
+		<liveSense.fragment.sun.misc.version>1.0.1-SNAPSHOT</liveSense.fragment.sun.misc.version>
+		<liveSense.fragment.sun.security.version>1.0.1-SNAPSHOT</liveSense.fragment.sun.security.version>
+		<liveSense.fragment.javax.jws-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.jws-jre-1.6.version>
+		<liveSense.fragment.javax.xml-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.xml-jre-1.6.version>
+		<liveSense.fragment.javax.activation-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.activation-jre-1.6.version>
+		<liveSense.webconsole.branding.version>1.0.1-SNAPSHOT</liveSense.webconsole.branding.version>
+		<liveSense.core.version>1.0.1-SNAPSHOT</liveSense.core.version>
+		<liveSense.framework.cxf.version>${cxf.version}_1-SNAPSHOT</liveSense.framework.cxf.version>
+		<liveSense.framework.gwt.version>${gwt.version}_1-SNAPSHOT</liveSense.framework.gwt.version>
+		<liveSense.framework.gxt.version>${gxt.version}_1-SNAPSHOT</liveSense.framework.gxt.version>
+		<liveSense.misc.i18n.version>1.0.0-SNAPSHOT</liveSense.misc.i18n.version>
+		<liveSense.misc.javax.persistence.version>1.0.1-1.0-SNAPSHOT</liveSense.misc.javax.persistence.version>
+		<liveSense.misc.jcrom.version>1.0.0-SNAPSHOT</liveSense.misc.jcrom.version>
+		<liveSense.misc.jsr303.version>1.0.0-1.0.0.GA-SNAPSHOT</liveSense.misc.jsr303.version>
+		<liveSense.misc.queryBuilder.version>1.0.0-SNAPSHOT</liveSense.misc.queryBuilder.version>
+		<liveSense.scripting.jsp.taglib.jstl.version>1.0.1-1.1.2-SNAPSHOT</liveSense.scripting.jsp.taglib.jstl.version>
+		<liveSense.scripting.jsp.taglib.json.version>1.0.1-SNAPSHOT</liveSense.scripting.jsp.taglib.json.version>
+		<liveSense.service.activation.version>1.0.1-SNAPSHOT</liveSense.service.activation.version>
+		<liveSense.service.captha.version>1.0.1-SNAPSHOT</liveSense.service.captha.version>
+		<liveSense.service.dataSourceProvider.version>1.0.0-SNAPSHOT</liveSense.service.dataSourceProvider.version>
+		<liveSense.service.email.version>1.0.1-SNAPSHOT</liveSense.service.email.version>
+		<liveSense.service.languageSelector.version>1.0.1-SNAPSHOT</liveSense.service.languageSelector.version>
+		<liveSense.service.report.jasper.version>${jasper.version}_1-SNAPSHOT</liveSense.service.report.jasper.version>
+		<liveSense.service.securityManager.version>1.0.1-SNAPSHOT</liveSense.service.securityManager.version>
+		<liveSense.service.thumbnailGenerator.version>1.0.1-SNAPSHOT</liveSense.service.thumbnailGenerator.version>
+		<liveSense.service.xssRemove.version>1.0.1-SNAPSHOT</liveSense.service.xssRemove.version>
+		<liveSense.content.initial.version>1.0.1-SNAPSHOT</liveSense.content.initial.version>
+		<liveSense.sample.gwt.notes.version>1.0.1-SNAPSHOT</liveSense.sample.gwt.notes.version>
+		<liveSense.sample.simplePortal.version>1.0.1-SNAPSHOT</liveSense.sample.simplePortal.version>
+		<liveSense.fragment.com.sun.image.codec.jpeg.version>1.0.1-SNAPSHOT</liveSense.fragment.com.sun.image.codec.jpeg.version>
+		<liveSense.misc.configurationLoader.version>1.0.1-SNAPSHOT</liveSense.misc.configurationLoader.version>
+		<liveSense.service.solr.version>${solr.version}_1-SNAPSHOT</liveSense.service.solr.version>
 	</properties>
 	<!-- <issueManagement> <system>Mantis</system> <url></url> </issueManagement> -->
 	<scm>
@@ -255,6 +349,8 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										<versionRange>[2.0,)</versionRange>
 										<goals>
 											<goal>prepare-package</goal>
+											<goal>attach-bundle-list</goal>
+											<goal>create-bundle-jar</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>
@@ -646,77 +742,82 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.auth.core</artifactId>
-				<version>1.0.6</version>
+				<version>${sling.auth.core.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.api</artifactId>
-				<version>2.2.2</version>
+				<version>${sling.api.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.classloader</artifactId>
-				<version>1.2.2</version>
+				<version>${sling.commons.classloader.version}</version>
 			</dependency>			
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.log</artifactId>
-				<version>2.1.3-SNAPSHOT</version>
+				<version>${sling.commons.log.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.mime</artifactId>
-				<version>2.1.4</version>
+				<version>${sling.commons.mime.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.osgi</artifactId>
-				<version>2.1.0</version>
+				<version>${sling.commons.osgi.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.commons.scheduler</artifactId>
-				<version>2.3.0</version>
+				<version>${sling.commons.scheduler.version}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.event</artifactId>
-				<version>3.1.0</version>
+				<version>${sling.event.verison}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.jcr.api</artifactId>
-				<version>2.1.0</version>
+				<version>${sling.jcr.api.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.jcr.base</artifactId>
-				<version>2.1.0</version>
+				<version>${sling.jcr.base.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.engine</artifactId>
-				<version>2.2.4</version>
+				<version>${sling.engine.version}</version>
 			</dependency>
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.jcr.jackrabbit.server</artifactId>
-                <version>2.1.0</version>
+                <version>${sling.jcr.jackrabbit.server.version}</version>
             </dependency>
 			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.jcr.resource</artifactId>
-				<version>2.0.10</version>
+				<version>${sling.jcr.resource.version}</version>
 			</dependency>
    			<dependency>
 				<groupId>org.apache.sling</groupId>
 				<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
-				<version>2.1.2</version>
+				<version>${sling.scripting.jsp.taglib.version}</version>
+			</dependency>
+   			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.scripting.jsp.taglib</artifactId>
+				<version>${sling.scripting.json.taglib.version}</version>
 			</dependency>
 
 			<!-- Jackrabbit dependencies -->            
@@ -769,17 +870,17 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.framework.cxf</artifactId>
-				<version>1.0.0-2.4.2-SNAPSHOT</version>
+				<version>${cxf.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.framework.gwt</artifactId>
-				<version>1.0.1-2.4.0-SNAPSHOT</version>
+				<version>${gwt.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.framework.gxt</artifactId>
-				<version>1.0.1-2.2.5-SNAPSHOT</version>
+				<version>${gxt.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
@@ -927,13 +1028,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.osgi</groupId>
 				<artifactId>org.osgi.core</artifactId>
-				<version>4.1.0</version>
+				<version>4.2.0</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.osgi</groupId>
 				<artifactId>org.osgi.compendium</artifactId>
-				<version>4.1.0</version>
+				<version>4.2.0</version>
 				<scope>provided</scope>
 			</dependency>
 
@@ -991,7 +1092,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
 				<version>${slf4j.version}</version>
-				<scope>test, runtime</scope>
+				<scope>runtime</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -1010,7 +1111,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
     	<dependency>
     		<groupId>org.slf4j</groupId>
     		<artifactId>slf4j-simple</artifactId>
-    		<scope>runtime, test</scope>
+    		<scope>runtime</scope>
 	</dependency>
     	<dependency>
     		<groupId>org.slf4j</groupId>
@@ -1021,11 +1122,34 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
     		<groupId>org.slf4j</groupId>
     		<artifactId>jcl-over-slf4j</artifactId>
     		<version>${slf4j.version}</version>
-    		<scope>test</scope>
+    		<scope>runtime</scope>
 	</dependency>
   </dependencies>
 	 
     <repositories>
+    
+        <repository>
+            <id>OPS4J</id>
+            <name>OPS4J Repository</name>
+            <url>http://repository.ops4j.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+                <id>Apache Snapshots</id>
+                <url>https://repository.apache.org/content/repositories/snapshots</url>
+        </repository>
+        
+        <repository>
+        			<id>Alfresco</id>
+        			<url>http://maven.alfresco.com/nexus/content/repositories/public</url>
+        </repository>
+   
         <repository>
           <snapshots>
             <enabled>false</enabled>
