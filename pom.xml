@@ -27,7 +27,7 @@
 	<properties>
 		<gwt.version>2.4.0</gwt.version>
 		<gxt.version>3.0.0-rc2</gxt.version>
-        <jackrabbit.version>2.3.6</jackrabbit.version>
+        <jackrabbit.version>2.4.0</jackrabbit.version>
         <cxf.version>2.5.2</cxf.version>
         <slf4j.version>1.6.1</slf4j.version>
         <logback.version>1.0.3</logback.version>
@@ -105,6 +105,7 @@
 		<liveSense.misc.jcrom.version>1.0.0-SNAPSHOT</liveSense.misc.jcrom.version>
 		<liveSense.misc.jsr303.version>1.0.0-1.0.0.GA-SNAPSHOT</liveSense.misc.jsr303.version>
 		<liveSense.misc.queryBuilder.version>1.0.0-SNAPSHOT</liveSense.misc.queryBuilder.version>
+		<liveSense.misc.queryBuilder.gwt.version>1.0.0-SNAPSHOT</liveSense.misc.queryBuilder.gwt.version>
 		<liveSense.scripting.jsp.taglib.jstl.version>1.0.1-1.1.2-SNAPSHOT</liveSense.scripting.jsp.taglib.jstl.version>
 		<liveSense.scripting.jsp.taglib.json.version>1.0.1-SNAPSHOT</liveSense.scripting.jsp.taglib.json.version>
 		<liveSense.service.activation.version>1.0.1-SNAPSHOT</liveSense.service.activation.version>
@@ -866,7 +867,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.core</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
@@ -886,87 +887,87 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.gwt.jsr303</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${liveSense.misc.gwt.jsr303.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.i18n</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${liveSense.misc.i18n.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.javax.persistence</artifactId>
-				<version>1.0.1-1.0-SNAPSHOT</version>
+				<version>${liveSense.misc.javax.persistence.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.jcrom</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${liveSense.misc.jcrom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.jsr303</artifactId>
-				<version>1.0.0-1.0.0.GA-SNAPSHOT</version>
+				<version>${liveSense.misc.jsr303.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.misc.queryBuilder</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${liveSense.misc.queryBuilder.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
-				<version>1.0.1-1.1.2-SNAPSHOT</version>
+				<version>${liveSense.scripting.jsp.taglib.jstl.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.scripting.jsp.taglib.json.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.activation</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.activation.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.captha</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.captha.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${liveSense.service.dataSourceProvider.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.email</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.email.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.languageSelector</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.languageSelector.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.report.jasper</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.report.jasper.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.securityManager</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.securityManager.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.thumbnailGenerator.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.liveSense</groupId>
 				<artifactId>org.liveSense.service.xssRemove</artifactId>
-				<version>1.0.1-SNAPSHOT</version>
+				<version>${liveSense.service.xssRemove.version}</version>
 			</dependency>
 
 
@@ -1164,6 +1165,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
         <repository>
                 <id>Apache Snapshots</id>
                 <url>https://repository.apache.org/content/repositories/snapshots</url>
+                 <snapshots><enabled/></snapshots>
         </repository>
         
 
