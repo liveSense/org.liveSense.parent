@@ -1146,13 +1146,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-release</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/release</url>
+          <url>https://repository-livesense.forge.cloudbees.com/release</url>
         </repository>
         <repository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/snapshot</url>
+          <url>https://repository-livesense.forge.cloudbees.com/repositories</url>
         </repository>
         <repository>
           <id>jboss-public</id>
@@ -1194,13 +1194,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-plugins-release</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/release</url>
+          <url>https://repository-livesense.forge.cloudbees.com/release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/snapshot</url>
+          <url>https://repository-livesense.forge.cloudbees.com/snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       
