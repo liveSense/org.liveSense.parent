@@ -38,6 +38,7 @@
 		<activiti.version>5.8</activiti.version>
 		<karaf.version>2.2.7</karaf.version>
 		<jasper.version>4.5.0</jasper.version>
+		<apacheds.version>2.0.0-M4</apacheds.version>
 		<sling.adapter.version>2.0.8</sling.adapter.version>
 		<sling.api.version>2.2.2</sling.api.version>
 		<sling.auth.core.version>1.0.6</sling.auth.core.version>
@@ -97,6 +98,7 @@
 		<liveSense.fragment.javax.activation-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.activation-jre-1.6.version>
 		<liveSense.webconsole.branding.version>1.0.1-SNAPSHOT</liveSense.webconsole.branding.version>
 		<liveSense.core.version>1.0.1-SNAPSHOT</liveSense.core.version>
+		<liveSense.framework.apacheds.version>${apacheds.version}_1-SNAPSHOT</liveSense.framework.apacheds.version>
 		<liveSense.framework.cxf.version>${cxf.version}_1-SNAPSHOT</liveSense.framework.cxf.version>
 		<liveSense.framework.gwt.version>${gwt.version}_1-SNAPSHOT</liveSense.framework.gwt.version>
 		<liveSense.framework.gxt.version>${gxt.version}_1-SNAPSHOT</liveSense.framework.gxt.version>
@@ -1136,13 +1138,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-release</name>
-          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
         </repository>
         <repository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
         </repository>
         <repository>
           <id>jboss-public</id>
@@ -1184,13 +1186,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-plugins-release</name>
-          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
         </pluginRepository>
       </pluginRepositories>
       
@@ -1198,13 +1200,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
         <repository>
             <id>livesense-distribution-releases</id>
             <name>releases</name>
-            <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-releases/</url>
+            <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
         </repository>
         
         <snapshotRepository>
             <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
-            <url>http://repo.mve.hu/nexus/content/repositories/livesense-local-snapshots/</url>
+            <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
         </snapshotRepository>
 
 
