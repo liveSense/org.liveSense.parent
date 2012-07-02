@@ -179,6 +179,14 @@
 		</plugins>
 	</reporting>
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav-jackrabbit</artifactId>
+				<version>1.0-beta-7</version>
+			</extension>
+		</extensions> 
+
 		<plugins>
 			<!-- Require Java 5 or higher for building -->
 			<plugin>
@@ -1138,13 +1146,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-release</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/release</url>
         </repository>
         <repository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/snapshot</url>
         </repository>
         <repository>
           <id>jboss-public</id>
@@ -1186,27 +1194,28 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-plugins-release</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
+          <url>https://livesense.forge.cloudbees.com/repositories/snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       
        <distributionManagement>
+      	<downloadUrl>https://github.com/liveSense/all</downloadUrl>
         <repository>
             <id>livesense-distribution-releases</id>
             <name>releases</name>
-            <url>https://livesense.forge.cloudbees.com/repositories/release/</url>
+            <url>dav:https://repository-livesense.forge.cloudbees.com/release</url>
         </repository>
         
         <snapshotRepository>
             <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
-            <url>https://livesense.forge.cloudbees.com/repositories/snapshot/</url>
+            <url>dav:https://repository-livesense.forge.cloudbees.com/snapshot</url>
         </snapshotRepository>
 
 
