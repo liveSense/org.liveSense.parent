@@ -6,6 +6,7 @@
 	<artifactId>org.liveSense.parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1-SNAPSHOT</version>
+        
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -1207,13 +1208,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           </snapshots>
           <id>livesense-central</id>
           <name>livesense-plugins-release</name>
-          <url>https://repository-livesense.forge.cloudbees.com/release</url>
+          <url>https://oss.sonatype.org/content/repositories/releases</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-plugins-snapshot</name>
-          <url>https://repository-livesense.forge.cloudbees.com/snapshot</url>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </pluginRepository>
       </pluginRepositories>
       
@@ -1222,13 +1223,13 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
         <repository>
             <id>livesense-distribution-releases</id>
             <name>releases</name>
-            <url>dav:https://repository-livesense.forge.cloudbees.com/release</url>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
         
         <snapshotRepository>
             <id>livesense-distribution-snapshots</id>
             <name>snapshots</name>
-            <url>dav:https://repository-livesense.forge.cloudbees.com/snapshot</url>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
 
 
