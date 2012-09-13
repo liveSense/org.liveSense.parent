@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.liveSense</groupId>
+	<groupId>com.github.livesense</groupId>
 	<artifactId>org.liveSense.parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1-SNAPSHOT</version>
@@ -33,59 +33,59 @@
         <logback.version>1.0.3</logback.version>
 		<lilith.version>0.9.41</lilith.version>
 		<sulky.version>0.9.14</sulky.version>
-		<solr.version>4.0-SNAPSHOT</solr.version>
+		<solr.version>4.0.0-BETA</solr.version>
 		<spring.version>3.0.5.RELEASE</spring.version>
 		<activiti.version>5.8</activiti.version>
 		<karaf.version>2.2.7</karaf.version>
 		<jasper.version>4.5.0</jasper.version>
 		<apacheds.version>2.0.0-M4</apacheds.version>
-		<sling.adapter.version>2.0.8</sling.adapter.version>
-		<sling.api.version>2.2.2</sling.api.version>
+		<sling.adapter.version>2.0.16</sling.adapter.version>
+		<sling.api.version>2.2.4</sling.api.version>
 		<sling.auth.core.version>1.0.6</sling.auth.core.version>
 		<sling.auth.form.version>1.0.2</sling.auth.form.version>
 		<sling.auth.openid.version>1.0.2</sling.auth.openid.version>
 		<sling.auth.selector.version>1.0.4</sling.auth.selector.version>
 		<sling.bundleresource.impl.version>2.0.6</sling.bundleresource.impl.version>
-		<sling.commons.classloader.version>1.2.2</sling.commons.classloader.version>
+		<sling.commons.classloader.version>1.3.0</sling.commons.classloader.version>
 		<sling.commons.json.version>2.0.6</sling.commons.json.version>
-		<sling.commons.log.version>2.1.3-SNAPSHOT</sling.commons.log.version>
-		<sling.commons.logservice.version>0.0.1-SNAPSHOT</sling.commons.logservice.version>
+		<sling.commons.log.version>3.0.0</sling.commons.log.version>
+		<sling.commons.logservice.version>1.0.0</sling.commons.logservice.version>
 		<sling.commons.mime.version>2.1.4</sling.commons.mime.version>
 		<sling.commons.osgi.version>2.1.0</sling.commons.osgi.version>
-		<sling.commons.scheduler.version>2.3.0</sling.commons.scheduler.version>
+		<sling.commons.scheduler.version>2.3.4</sling.commons.scheduler.version>
 		<sling.commons.threads.version>3.1.0</sling.commons.threads.version>
-		<sling.engine.version>2.2.4</sling.engine.version>
-		<sling.event.version>3.1.0</sling.event.version>
+		<sling.engine.version>2.2.6</sling.engine.version>
+		<sling.event.version>3.1.4</sling.event.version>
 		<sling.fsresource.version>1.0.2</sling.fsresource.version>
-		<sling.i18n.version>2.1.2</sling.i18n.version>
-		<sling.installer.core.version>3.2.2</sling.installer.core.version>
+		<sling.i18n.version>2.2.2</sling.i18n.version>
+		<sling.installer.core.version>3.3.8</sling.installer.core.version>
 		<sling.installer.provider.file.version>1.0.2</sling.installer.provider.file.version>
-		<sling.installer.provider.jcr.version>3.1.0</sling.installer.provider.jcr.version>
+		<sling.installer.provider.jcr.version>3.1.4</sling.installer.provider.jcr.version>
 		<sling.jcr.api.version>2.1.0</sling.jcr.api.version>
-		<sling.jcr.base.version>2.1.0</sling.jcr.base.version>
-		<sling.jcr.classloader.version>3.1.4</sling.jcr.classloader.version>
-		<sling.jcr.contentloader.version>2.1.3-SNAPSHOT</sling.jcr.contentloader.version>
+		<sling.jcr.base.version>2.1.2</sling.jcr.base.version>
+		<sling.jcr.classloader.version>3.1.8</sling.jcr.classloader.version>
+		<sling.jcr.contentloader.version>2.1.6</sling.jcr.contentloader.version>
 		<sling.jcr.davex.version>1.0.0</sling.jcr.davex.version>
 		<sling.jcr.jackrabbit.accessmanager.version>2.1.1-SNAPSHOT</sling.jcr.jackrabbit.accessmanager.version>
 		<sling.jcr.jackrabbit.server.version>2.1.1-SNAPSHOT</sling.jcr.jackrabbit.server.version>
 		<sling.jcr.jackrabbit.usermanager.version>2.2.0</sling.jcr.jackrabbit.usermanager.version>
 		<sling.jcr.ocm.version>2.0.4-incubator</sling.jcr.ocm.version>
-		<sling.jcr.resource.version>2.0.10</sling.jcr.resource.version>
+		<sling.jcr.resource.version>2.1.0</sling.jcr.resource.version>
 		<sling.jcr.webdav.version>2.1.0</sling.jcr.webdav.version>
 		<sling.launchpad.content.version>2.0.6</sling.launchpad.content.version>
-		<sling.launchpad.installer.version>1.0.4</sling.launchpad.installer.version>
-		<sling.scripting.api.version>2.1.2</sling.scripting.api.version>
-		<sling.scripting.core.version>2.0.18</sling.scripting.core.version>
+		<sling.launchpad.installer.version>1.1.2</sling.launchpad.installer.version>
+		<sling.scripting.api.version>2.1.4</sling.scripting.api.version>
+		<sling.scripting.core.version>2.0.24</sling.scripting.core.version>
 		<sling.scripting.freemarker.version>2.0.0-SNAPSHOT</sling.scripting.freemarker.version>
 		<sling.scripting.javascript.version>2.0.12</sling.scripting.javascript.version>
-		<sling.scripting.jsp.taglib.version>2.1.2</sling.scripting.jsp.taglib.version>
-		<sling.scripting.jsp.version>2.0.18</sling.scripting.jsp.version>
+		<sling.scripting.jsp.taglib.version>2.1.6</sling.scripting.jsp.taglib.version>
+		<sling.scripting.jsp.version>2.0.24</sling.scripting.jsp.version>
 		<sling.servlets.get.version>2.1.2</sling.servlets.get.version>
-		<sling.servlets.post.version>2.1.1-SNAPSHOT</sling.servlets.post.version>
-		<sling.servlets.resolver.version>2.1.0</sling.servlets.resolver.version>
-		<sling.settings.version>1.0.2</sling.settings.version>
+		<sling.servlets.post.version>2.1.2</sling.servlets.post.version>
+		<sling.servlets.resolver.version>2.1.2</sling.servlets.resolver.version>
+		<sling.settings.version>1.1.0</sling.settings.version>
 		<sling.fragment.transaction.version>0.0.1-SNAPSHOT</sling.fragment.transaction.version>
-		<sling.extensions.threaddump.version>0.2.0</sling.extensions.threaddump.version>
+		<sling.extensions.threaddump.version>0.2.2</sling.extensions.threaddump.version>
 		<sling.jcr.webconsole.version>1.0.0</sling.jcr.webconsole.version>
 		<sling.extensions.explorer.version>1.0.3-SNAPSHOT</sling.extensions.explorer.version>
 		<sling.extensions.webconsolesecurityprovider.version>1.0.0</sling.extensions.webconsolesecurityprovider.version>
@@ -398,7 +398,20 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										<ignore></ignore>
 									</action>
 								</pluginExecution>
-							</pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-jar-plugin</artifactId>
+										<versionRange>[2.3.2,)</versionRange>
+										<goals>
+											<goal>jar</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+								</pluginExecutions>
 
 						</lifecycleMappingMetadata>
 					</configuration>
@@ -875,107 +888,107 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 						
 			<!--  Define liveSense dependencies -->
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.core</artifactId>
 				<version>${liveSense.core.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.framework.cxf</artifactId>
 				<version>${cxf.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.framework.gwt</artifactId>
 				<version>${gwt.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.framework.gxt</artifactId>
 				<version>${gxt.version}_1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.gwt.jsr303</artifactId>
 				<version>${liveSense.misc.gwt.jsr303.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.i18n</artifactId>
 				<version>${liveSense.misc.i18n.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.javax.persistence</artifactId>
 				<version>${liveSense.misc.javax.persistence.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.jcrom</artifactId>
 				<version>${liveSense.misc.jcrom.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.jsr303</artifactId>
 				<version>${liveSense.misc.jsr303.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.misc.queryBuilder</artifactId>
 				<version>${liveSense.misc.queryBuilder.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.scripting.jsp.taglib.jstl</artifactId>
 				<version>${liveSense.scripting.jsp.taglib.jstl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.scripting.jsp.taglib.json</artifactId>
 				<version>${liveSense.scripting.jsp.taglib.json.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.activation</artifactId>
 				<version>${liveSense.service.activation.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.captha</artifactId>
 				<version>${liveSense.service.captha.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.dataSourceProvider</artifactId>
 				<version>${liveSense.service.dataSourceProvider.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.email</artifactId>
 				<version>${liveSense.service.email.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.languageSelector</artifactId>
 				<version>${liveSense.service.languageSelector.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.report.jasper</artifactId>
 				<version>${liveSense.service.report.jasper.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.securityManager</artifactId>
 				<version>${liveSense.service.securityManager.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.thumbnailGenerator</artifactId>
 				<version>${liveSense.service.thumbnailGenerator.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.liveSense</groupId>
+				<groupId>com.github.livesense</groupId>
 				<artifactId>org.liveSense.service.xssRemove</artifactId>
 				<version>${liveSense.service.xssRemove.version}</version>
 			</dependency>
