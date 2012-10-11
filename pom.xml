@@ -131,8 +131,8 @@
 	</properties>
 	<!-- <issueManagement> <system>Mantis</system> <url></url> </issueManagement> -->
 	<scm>
-		<connection>scm:git:git://github.com/liveSense/org.liveSense.parent</connection>
-		<developerConnection>scm:git:git://github.com/liveSense/org.liveSense.parent</developerConnection>
+		<connection>scm:git:git@github.com:liveSense/org.liveSense.parent.git</connection>
+		<developerConnection>scm:git:git@github.com:liveSense/org.liveSense.parent.git</developerConnection>
 		<url>https://github.com/liveSense/org.liveSense.parent</url>
 	</scm>
 	<reporting>
@@ -1172,15 +1172,15 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
-          <id>livesense-central</id>
+          <id>livesense-release</id>
           <name>livesense-release</name>
-          <url>https://repository-livesense.forge.cloudbees.com/release</url>
+          <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
         <repository>
           <snapshots />
           <id>livesense-snapshots</id>
           <name>livesense-snapshot</name>
-          <url>https://repository-livesense.forge.cloudbees.com/repositories</url>
+          <url>hhttps://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
         <repository>
           <id>jboss-public</id>
@@ -1235,9 +1235,9 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
        <distributionManagement>
       	<downloadUrl>https://github.com/liveSense/all</downloadUrl>
         <repository>
-            <id>livesense-distribution-releases</id>
-            <name>releases</name>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
+            <id>livesense-distribution-staging</id>
+            <name>staging</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         
         <snapshotRepository>
