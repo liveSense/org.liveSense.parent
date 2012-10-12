@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.livesense</groupId>
 	<artifactId>org.liveSense.parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1-SNAPSHOT</version>
+	<version>1</version>
         
 	<licenses>
 		<license>
@@ -312,7 +311,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 											</goals>
 										</pluginExecutionFilter>
 										 <action>
-	                    						<ignore></ignore>
+	                    						<ignore />
 	                  					</action>
 	               				</pluginExecution>
 
@@ -326,7 +325,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										</goals>
 									</pluginExecutionFilter>
 									 <action>
-                    						<ignore></ignore>
+                    						<ignore />
                   					</action>
                				</pluginExecution>
                				<pluginExecution>
@@ -397,7 +396,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -410,7 +409,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -423,7 +422,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore />
 									</action>
 								</pluginExecution>
 								</pluginExecutions>
@@ -1230,7 +1229,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
         <repository>
                 <id>Apache Snapshots</id>
                 <url>https://repository.apache.org/content/repositories/snapshots</url>
-                 <snapshots><enabled/></snapshots>
+                 <snapshots><enabled /></snapshots>
         </repository>
         
 
