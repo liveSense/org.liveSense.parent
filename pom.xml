@@ -43,13 +43,13 @@
 		<parboiled.version>1.0.2</parboiled.version>
 		<pegdown.version>1.1.0</pegdown.version>
 		<lucene.version>4.0.0</lucene.version>
-		<sling.adapter.version>2.0.16</sling.adapter.version>
-		<sling.api.version>2.2.4</sling.api.version>
+		<sling.adapter.version>2.1.0</sling.adapter.version>
+		<sling.api.version>2.3.0</sling.api.version>
 		<sling.auth.core.version>1.0.6</sling.auth.core.version>
 		<sling.auth.form.version>1.0.2</sling.auth.form.version>
 		<sling.auth.openid.version>1.0.2</sling.auth.openid.version>
 		<sling.auth.selector.version>1.0.4</sling.auth.selector.version>
-		<sling.bundleresource.impl.version>2.0.6</sling.bundleresource.impl.version>
+		<sling.bundleresource.impl.version>2.1.0</sling.bundleresource.impl.version>
 		<sling.commons.classloader.version>1.3.0</sling.commons.classloader.version>
 		<sling.commons.json.version>2.0.6</sling.commons.json.version>
 		<sling.commons.log.version>3.0.0</sling.commons.log.version>
@@ -60,9 +60,11 @@
 		<sling.commons.threads.version>3.1.0</sling.commons.threads.version>
 		<sling.engine.version>2.2.6</sling.engine.version>
 		<sling.event.version>3.1.4</sling.event.version>
-		<sling.fsresource.version>1.0.2</sling.fsresource.version>
+		<sling.fsresource.version>1.1.0</sling.fsresource.version>
 		<sling.i18n.version>2.2.2</sling.i18n.version>
-		<sling.installer.core.version>3.3.8</sling.installer.core.version>
+		<sling.installer.api.version>1.0.0</sling.installer.api.version>
+		<sling.installer.console.version>1.0.0</sling.installer.console.version>
+		<sling.installer.core.version>3.4.0</sling.installer.core.version>
 		<sling.installer.provider.file.version>1.0.2</sling.installer.provider.file.version>
 		<sling.installer.provider.jcr.version>3.1.4</sling.installer.provider.jcr.version>
 		<sling.jcr.api.version>2.1.0</sling.jcr.api.version>
@@ -74,20 +76,21 @@
 		<sling.jcr.jackrabbit.server.version>2.1.1-SNAPSHOT</sling.jcr.jackrabbit.server.version>
 		<sling.jcr.jackrabbit.usermanager.version>2.2.0</sling.jcr.jackrabbit.usermanager.version>
 		<sling.jcr.ocm.version>2.0.4-incubator</sling.jcr.ocm.version>
-		<sling.jcr.resource.version>2.1.0</sling.jcr.resource.version>
+		<sling.jcr.resource.version>2.2.0</sling.jcr.resource.version>
 		<sling.jcr.webdav.version>2.1.0</sling.jcr.webdav.version>
 		<sling.launchpad.api.version>1.1.0</sling.launchpad.api.version>
 		<sling.launchpad.content.version>2.0.6</sling.launchpad.content.version>
 		<sling.launchpad.installer.version>1.1.2</sling.launchpad.installer.version>
+		<sling.resourceresolver.version>1.0.0</sling.resourceresolver.version>
 		<sling.scripting.api.version>2.1.4</sling.scripting.api.version>
 		<sling.scripting.core.version>2.0.24</sling.scripting.core.version>
 		<sling.scripting.freemarker.version>2.0.0-SNAPSHOT</sling.scripting.freemarker.version>
 		<sling.scripting.javascript.version>2.0.12</sling.scripting.javascript.version>
-		<sling.scripting.jsp.taglib.version>2.1.6</sling.scripting.jsp.taglib.version>
+		<sling.scripting.jsp.taglib.version>2.1.8</sling.scripting.jsp.taglib.version>
 		<sling.scripting.jsp.version>2.0.24</sling.scripting.jsp.version>
-		<sling.servlets.get.version>2.1.2</sling.servlets.get.version>
-		<sling.servlets.post.version>2.1.2</sling.servlets.post.version>
-		<sling.servlets.resolver.version>2.1.2</sling.servlets.resolver.version>
+		<sling.servlets.get.version>2.1.4</sling.servlets.get.version>
+		<sling.servlets.post.version>2.2.0</sling.servlets.post.version>
+		<sling.servlets.resolver.version>2.2.0</sling.servlets.resolver.version>
 		<sling.settings.version>1.1.0</sling.settings.version>
 		<sling.fragment.transaction.version>0.0.1-SNAPSHOT</sling.fragment.transaction.version>
 		<sling.extensions.threaddump.version>0.2.2</sling.extensions.threaddump.version>
