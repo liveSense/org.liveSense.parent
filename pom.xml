@@ -126,7 +126,7 @@
 		<liveSense.scripting.jsp.taglib.jstl.version>1.0.1-1.1.2-SNAPSHOT</liveSense.scripting.jsp.taglib.jstl.version>
 		<liveSense.scripting.jsp.taglib.json.version>1.0.1-SNAPSHOT</liveSense.scripting.jsp.taglib.json.version>
 		<liveSense.service.activation.version>1.0.1-SNAPSHOT</liveSense.service.activation.version>
-		<liveSense.service.captha.version>1.0.1-SNAPSHOT</liveSense.service.captha.version>
+		<liveSense.service.captcha.version>1.0.1-SNAPSHOT</liveSense.service.captcha.version>
 		<liveSense.service.cxf.version>1.0.0-SNAPSHOT</liveSense.service.cxf.version>
 		<liveSense.service.dataSourceProvider.version>1.0.0-SNAPSHOT</liveSense.service.dataSourceProvider.version>
 		<liveSense.service.email.version>1.0.1-SNAPSHOT</liveSense.service.email.version>
@@ -1131,8 +1131,8 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			</dependency>
 			<dependency>
 				<groupId>com.github.livesense</groupId>
-				<artifactId>org.liveSense.service.captha</artifactId>
-				<version>${liveSense.service.captha.version}</version>
+				<artifactId>org.liveSense.service.captcha</artifactId>
+				<version>${liveSense.service.captcha.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.livesense</groupId>
