@@ -25,7 +25,7 @@
 		<maven>2.2.1</maven>
 	</prerequisites>
 	<properties>
-		<gwt.version>2.4.0</gwt.version>
+		<gwt.version>2.5.0</gwt.version>
 		<gxt.version>3.0.1</gxt.version>
 		<jackrabbit.version>2.4.0</jackrabbit.version>
 		<cxf.version>2.7.0</cxf.version>
