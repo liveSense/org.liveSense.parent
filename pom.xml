@@ -1416,6 +1416,14 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 		</repository>
 
 		<repository>
+			<id>Apache Releases</id>
+			<url>https://repository.apache.org/content/repositories/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
 			<id>livesense-release</id>
 			<name>livesense-release</name>
 			<snapshots>
