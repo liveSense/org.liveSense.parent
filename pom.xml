@@ -133,11 +133,13 @@
 		<liveSense.scripting.jsp.taglib.jstl.version>1.0.1-1.1.2-SNAPSHOT</liveSense.scripting.jsp.taglib.jstl.version>
 		<liveSense.scripting.jsp.taglib.json.version>1.0.1-SNAPSHOT</liveSense.scripting.jsp.taglib.json.version>
 		<liveSense.service.apacheds.version>1.0.0-SNAPSHOT</liveSense.service.apacheds.version>
+		<liveSense.service.apacheds.configurationLoader.version>1.0.0-SNAPSHOT</liveSense.service.apacheds.configurationLoader.version>
 		<liveSense.service.activation.version>1.0.1-SNAPSHOT</liveSense.service.activation.version>
 		<liveSense.service.captcha.version>1.0.1-SNAPSHOT</liveSense.service.captcha.version>
 		<liveSense.service.cxf.version>1.0.0-SNAPSHOT</liveSense.service.cxf.version>
 		<liveSense.service.dataSourceProvider.version>1.0.0-SNAPSHOT</liveSense.service.dataSourceProvider.version>
 		<liveSense.service.email.version>1.0.1-SNAPSHOT</liveSense.service.email.version>
+		<liveSense.service.guacamole.version>1.0.0-SNAPSHOT</liveSense.service.guacamole.version>
 		<liveSense.service.gwt.version>1.0.0-SNAPSHOT</liveSense.service.gwt.version>
 		<liveSense.service.languageSelector.version>1.0.1-SNAPSHOT</liveSense.service.languageSelector.version>
 		<liveSense.service.markdown.version>1.0.0-SNAPSHOT</liveSense.service.markdown.version>
