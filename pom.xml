@@ -28,7 +28,7 @@
 		<gwt.version>2.5.0</gwt.version>
 		<gxt.version>3.0.1</gxt.version>
 		<jackrabbit.version>2.4.0</jackrabbit.version>
-		<cxf.version>2.7.0</cxf.version>
+		<cxf.version>2.6.3</cxf.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<logback.version>1.0.3</logback.version>
 		<lilith.version>0.9.42.1</lilith.version>
