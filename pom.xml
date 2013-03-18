@@ -45,6 +45,9 @@
 		<parboiled.version>1.0.2</parboiled.version>
 		<pegdown.version>1.1.0</pegdown.version>
 		<lucene.version>4.0.0</lucene.version>
+		<fitnesse.version>20130316</fitnesse.version>
+		<jodconverter.version>3.0-SNAPSHOT</jodconverter.version>
+		<jodreports.version>2.4.0</jodreports.version>
 		<sling.adapter.version>2.1.0</sling.adapter.version>
 		<sling.api.version>2.3.0</sling.api.version>
 		<sling.auth.core.version>1.1.0</sling.auth.core.version>
@@ -114,14 +117,18 @@
 		<liveSense.fragment.jackrabbit.server.ddl.version>1.0.0-SNAPSHOT</liveSense.fragment.jackrabbit.server.ddl.version>
 		<liveSense.fragment.javax.activation-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.activation-jre-1.6.version>
 		<liveSense.webconsole.branding.version>1.0.1-SNAPSHOT</liveSense.webconsole.branding.version>
+		<liveSense.features.branding.version>1.0.0-SNAPSHOT</liveSense.features.branding.version>
 		<liveSense.core.version>1.0.1-SNAPSHOT</liveSense.core.version>
 		<liveSense.framework.apacheds.version>${apacheds.version}_1-SNAPSHOT</liveSense.framework.apacheds.version>
 		<liveSense.framework.cxf.version>${cxf.version}_1-SNAPSHOT</liveSense.framework.cxf.version>
 		<liveSense.framework.gwt.version>${gwt.version}_1-SNAPSHOT</liveSense.framework.gwt.version>
 		<liveSense.framework.gxt.version>${gxt.version}_1-SNAPSHOT</liveSense.framework.gxt.version>
+		<liveSense.framework.fitnesse.version>${fitnesse.version}_1-SNAPSHOT</liveSense.framework.fitnesse.version>
 		<liveSense.framework.lucene.version>${lucene.version}_1-SNAPSHOT</liveSense.framework.lucene.version>
 		<liveSense.framework.jasperreports.version>${jasper.version}_1-SNAPSHOT</liveSense.framework.jasperreports.version>
 		<liveSense.framework.solr.version>${solr.version}_1-SNAPSHOT</liveSense.framework.solr.version>
+		<liveSense.framework.jodconverter.version>${jodconverter.version}_1-SNAPSHOT</liveSense.framework.jodconverter.version>
+		<liveSense.framework.jodreports.version>${jodreports.version}_1-SNAPSHOT</liveSense.framework.jodreports.version>
 		<liveSense.launchpad.version>1.0.2-SNAPSHOT</liveSense.launchpad.version>
 		<liveSense.misc.i18n.version>1.0.0-SNAPSHOT</liveSense.misc.i18n.version>
 		<liveSense.misc.javax.persistence.version>1.0.1-1.0-SNAPSHOT</liveSense.misc.javax.persistence.version>
