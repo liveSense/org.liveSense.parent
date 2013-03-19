@@ -114,7 +114,7 @@
 		<liveSense.fragment.sun.security.version>1.0.1-SNAPSHOT</liveSense.fragment.sun.security.version>
 		<liveSense.fragment.javax.jws-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.jws-jre-1.6.version>
 		<liveSense.fragment.javax.xml-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.xml-jre-1.6.version>
-		<liveSense.fragment.jackrabbit.server.ddl.version>1.0.0-SNAPSHOT</liveSense.fragment.jackrabbit.server.ddl.version>
+		<liveSense.fragment.jackrabbit.server.jaybird.ddl.version>1.0.0-SNAPSHOT</liveSense.fragment.jackrabbit.server.jaybird.ddl.version>
 		<liveSense.fragment.javax.activation-jre-1.6.version>1.0.0-SNAPSHOT</liveSense.fragment.javax.activation-jre-1.6.version>
 		<liveSense.webconsole.branding.version>1.0.1-SNAPSHOT</liveSense.webconsole.branding.version>
 		<liveSense.features.branding.version>1.0.0-SNAPSHOT</liveSense.features.branding.version>
@@ -522,7 +522,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 					<artifactId>maven-jcrocm-plugin</artifactId>
 					<version>2.0.4-incubator</version>
 				</plugin>
-				
+
 				<!-- Jasper report compiler plugin -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -554,7 +554,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 						</dependency>
 					</dependencies>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-scr-plugin</artifactId>
@@ -611,7 +611,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 						<tagBase> https://svn.apache.org/repos/asf/sling/tags </tagBase>
 					</configuration>
 				</plugin>
-				
+
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
@@ -736,7 +736,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<!-- MSOURCES-13 related workaround overriding super-pom -->
 		<profile>
 			<id>release-profile</id>
@@ -764,7 +764,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<!-- Use this profile to install the OSGi bundle automatically, during development -->
 			<id>autoInstallBundle</id>
@@ -1063,7 +1063,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<artifactId>xstream</artifactId>
 				<version>1.4.1</version>
 			</dependency>
-			
+
 			<!-- Define liveSense dependencies -->
 			<dependency>
 				<groupId>com.github.livesense</groupId>
@@ -1336,7 +1336,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>2.5</version>
 				<scope>provided</scope>
 			</dependency>
-			
+
 			<!-- JCR API -->
 			<dependency>
 				<groupId>javax.jcr</groupId>
@@ -1360,7 +1360,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 				<version>1.6.0</version>
 				<scope>provided</scope>
 			</dependency>
-			
+
 			<!-- Basic dependencies for Unit Tests -->
 			<dependency>
 				<groupId>junit</groupId>
@@ -1458,7 +1458,7 @@ on 64bit platforms: MAVEN_OPTS="-Xmx512M -XX:MaxPermSize=512M"
 			<id>Alfresco-Public</id>
 			<url>https://maven.alfresco.com/nexus/content/repositories/public</url>
 		</repository>
-<!-- 
+<!--
 		<repository>
 			<id>OPS4J</id>
 			<name>OPS4J Repository</name>
